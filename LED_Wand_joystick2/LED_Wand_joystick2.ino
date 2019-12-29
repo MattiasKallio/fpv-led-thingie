@@ -82,10 +82,10 @@ void setup() {
 void loop() {
   total_len = strlen(outputtexter[textNumber]) * (pixelPerChar + matrix.width()) ;
 
-  /*val = analogRead(JOYPIN);
+  val = analogRead(JOYPIN);
   if(val){
     joysticking(val);
-  }*/
+  }
 
   //To show text number with LED:s
   if(first){
