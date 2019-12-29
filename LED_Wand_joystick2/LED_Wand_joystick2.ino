@@ -29,7 +29,7 @@ const uint16_t colors[] = {
   matrix.Color(255, 255, 255) //white
 };
 
-const int textslength = 3;
+const int textslength = 8;
 
 int textNumber = 0;
 int pixelPerChar = 7;
@@ -50,8 +50,13 @@ float buffer= 0;
 
 //texts
 char outputtexter[textslength][64] = {"",
-  "SNILLRIK.SE ",
-  "HAPPY NEW YEAR "
+  "SNILLRIK ",
+  "HAPPY NEW YEAR ",
+  "DRONESPORTZ ",
+  "JOHN SWE FPV ",
+  "RSFPV",
+  "KLUDDE FPV ",
+  "RSKR_FPV "
 };
 
 void setup() {
@@ -75,17 +80,17 @@ void setup() {
 }
   
 void loop() {
-  total_len = strlen(outputtexter[textNumber]) * (pixelPerChar + x) ;
+  total_len = strlen(outputtexter[textNumber]) * (pixelPerChar + matrix.width()) ;
 
-  val = analogRead(JOYPIN);
+  /*val = analogRead(JOYPIN);
   if(val){
     joysticking(val);
-  }
+  }*/
 
   //To show text number with LED:s
   if(first){
     //sets the number of the text showing ie 1 is "MY QUAD ROCKS!"
-    matrix.fillRect(0, 0, 1, textNumber, colors[0]);
+    matrix.fillRect(0,   0, 1, textNumber, colors[0]);
     matrix.show();
     //sets the main delay for haft fast the text scrolls.
     matrix2.fillRect(0, 0, 1, scrollspeed, colors[0]);
@@ -131,7 +136,7 @@ void joysticking(int val){
     buffer= (Vin/Vout) -1;
     R2= R1 * buffer;
     int numberoflights_display = 0;
-    
+    Serial.println(R2);
     if(R2<100000){
         matrix.fillScreen(0);
       
