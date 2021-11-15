@@ -12,3 +12,5 @@ I used a 4.7k resistor, because thats what I had laying around, there are probab
 ![led stick connections image](images/LED_connect_image.jpg)
 
 A clip with me talking about this and some flying around with it can be found here: https://www.youtube.com/watch?v=0fN0E4NP0gk
+
+Thingieverse for pretty 3D-printed box, or sort of... https://www.thingiverse.com/thing:5137845
