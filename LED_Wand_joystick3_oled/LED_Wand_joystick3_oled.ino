@@ -42,11 +42,11 @@ const uint16_t colors[] = {
   matrix.Color(255, 255, 255) //white
 };
 
-const int textslength = 7;
+const int textslength = 8;
 
 int textNumber = 0;
 int pixelPerChar = 7;
-int scrollspeed = 5;
+int scrollspeed = 3;
 int total_len;
 int x = matrix.width();
 int pass = 0;
@@ -64,10 +64,11 @@ float buffer= 0;
 //texts
 char outputtexter[textslength][64] = {"",
   "SNILLRIK ",
-  "PHOTOGRAPHY ",
-  "FARS DAG ",
-  "STOCKHOLM ",
-  "LENSBALL ",
+  "QWAD KWADDERS ",
+  "HAPPY NEW YEAR ",
+  "LIFE AINT NUTHIN BUT BICHES AND MONEY ",
+  "DRONELIFE ",
+  "VARSH E SLOTTE ",
   "SWEe0fp9fm3e9aq5 "
 };
 

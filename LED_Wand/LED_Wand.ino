@@ -69,7 +69,10 @@ char outputtexter[textslength][64] = {"",
 char outputtexter[textslength][64] = {"",
   "SNILLRIK ",
   "QWAD KWADDERS ",
-  "HAPPY NEW YEAR "
+  "HAPPY NEW YEAR ",
+  "LIFE AINT NUTHIN BUT BICHES AND MONEY",
+  "DRONELIFE",
+  "VARSH E SLOTTE"
 };
 
 void setup() {
